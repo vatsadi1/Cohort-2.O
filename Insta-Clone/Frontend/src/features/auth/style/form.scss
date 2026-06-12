@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto;
+}
+
+body {
+  margin: 0;
+  background: #0b0f14;
+  color: white;
+}
+
+/* layout */
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+/* LEFT */
+.left {
+  flex: 1;
+  padding: 60px;
+  background: radial-gradient(circle at top, #0f1720, #05080c);
+}
+
+.logo {
+  width: 40px;
+  margin-bottom: 30px;
+}
+
+.left h1 {
+  font-size: 42px;
+  font-weight: 500;
+}
+
+.left span {
+  background: linear-gradient(90deg, orange, pink);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.mock {
+  margin-top: 40px;
+  width: 300px;
+  border-radius: 20px;
+}
+
+/* RIGHT */
+.right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  width: 380px;
+}
+
+.form h2 {
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 14px;
+  margin: 8px 0;
+  border-radius: 12px;
+  border: 1px solid #2a2f36;
+  background: #12161c;
+  color: white;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid #0095f6;
+}
+
+/* login btn */
+.login-btn {
+  width: 100%;
+  padding: 14px;
+  margin-top: 10px;
+  border-radius: 999px;
+  border: none;
+  background: #1d4ed8;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+}
+
+/* text */
+.forgot {
+  text-align: center;
+  margin: 15px 0;
+  color: #b3b3b3;
+}
+
+/* outline buttons */
+.outline {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 999px;
+  border: 1px solid #2a2f36;
+  background: transparent;
+ 
+  color: white;
+}
+
+.outline.blue {
+  border: 1px solid #0095f6;
+  color: #0095f6;
+    text-decoration: none;
+  cursor: pointer;
+}
+
+/* meta */
+.meta {
+  text-align: center;
+  margin-top: 20px;
+  color: #777;
+}
+
+/* 📱 mobile */
+@media (max-width: 900px) {
+  .left {
+    display: none;
+  }
+
+  .right {
+    flex: 1;
+  }
+
+  .form {
+    width: 90%;
+  }
+}
